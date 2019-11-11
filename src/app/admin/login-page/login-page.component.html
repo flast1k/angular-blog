@@ -38,7 +38,11 @@
     </div>
   </div>
 
-  <button class="btn btn-primary" type="submit" [disabled]="form.invalid">
+  <button
+    class="btn btn-primary"
+    type="submit"
+    [disabled]="form.invalid || submitted"
+  >
     Login
   </button>
 </form>
