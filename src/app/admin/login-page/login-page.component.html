@@ -5,6 +5,10 @@
     {{ error }}
   </div>
 
+  <div class="alert info" *ngIf="message">
+    {{ message }}
+  </div>
+
   <div
     class="form-control"
     [ngClass]="{
